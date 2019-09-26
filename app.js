@@ -11,11 +11,12 @@ var session = require('express-session');
 //var multer = require('multer');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
-var db = mongoose.connection;
+
 
 var indexRouter = require('./routes/index');
 var app = express();
 
+mongoose.connect('mongodb://localhost:27017/stock');
 
 //Passport
 app.use(passport.initialize());
