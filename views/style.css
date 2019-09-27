@@ -10,8 +10,13 @@ body{
 .sign-up-form {
 	width: 250px;
 	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+<<<<<<< HEAD
 	padding: 45px;
 	background: #fff;
+=======
+	padding: 45px; 
+	background: lime;
+>>>>>>> 000258a9575552145a9e40edf4245f2bc85aae1d
 	margin: 10% auto 0;
 	text-align: center;
 }
@@ -24,7 +29,7 @@ body{
 border-radius: 20px;
 margin: 10px 0;
 width: 100%;
-border: 1px solid #999;
+border: 2px solid black;
 padding: 10px;
 outline: none;
 }
@@ -41,9 +46,11 @@ button{
 }
 .signup-btn{
 	background-color: #1c8adb;
+	border: 2px solid black;
 }
 .twitter-btn{
 background-color: #21afde;
+border: 2px solid black;
 }
 a{
 	text-decoration: none;
@@ -51,6 +58,7 @@ a{
 hr{
 	margin-top: 20px;
 	width: 80%;
+	border: 2px solid black;
 }
 .or{
 	background: #fff;
@@ -60,5 +68,10 @@ hr{
 img{
 	width: 70px;
 	margin-top: -50px;
+<<<<<<< HEAD
 	background: lime;
 }
+=======
+	 
+}
+>>>>>>> 000258a9575552145a9e40edf4245f2bc85aae1d
