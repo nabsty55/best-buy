@@ -4,10 +4,18 @@ block content
   .container
     h1 Best Buy
     h4 Your Convenient Shopping Solution
-    img(src='bblogo.jpg')
+    img(src='/Images/bblogo.jpg')
     include ./partials/header.jade
     each  product in products
-      .new products
+      .row
+        each product in this
+          .col-sm-6.col-md-4
+            .card(style='width: 18rem;')
+              img.card-img-top(src='#{imagePath}', alt='Card image cap')
+              .card-body
+                h5.card-title #{this.title}
+                p.card-text Casual Slim Fit Shirt in Green and Blue Colour. Light Weight and Quick Dry.
+                a.btn.btn-primary(href='#') Buy Now
     .row
       .col-sm-6.col-md-4
         .card(style='width: 18rem;')

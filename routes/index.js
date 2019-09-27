@@ -4,8 +4,16 @@ var Product = require('../models/items');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  var products = Product.find();
-  res.render('index', { title: 'BestBuy', products: products });
+  Product.find(function(err, docs){
+    var itemChunk = [];
+    var chunkSize = 3;
+    for(var i = 0; i<docs.length; i += chunkSize){
+      itemChunk.push(docs.slice(i, i + chunkSize));
+    }
+
+    res.render('index', { title: 'BestBuy', products: itemChunk });
+  });
+
 });
 
 module.exports = router;

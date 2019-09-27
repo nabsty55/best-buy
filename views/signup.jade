@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Sign Up Form
+    link(rel='stylesheet', href='style.css')
+  body
+    .sign-up-form
+      img(src='./Best-Buy.jpg')
+      h1 Sign Up Now
+      form(method='post')
+        input.input-box(type='email', placeholder='Your Email')
+        input.input-box(type='password', placeholder='Your Password')
+        p
+          span
+            input(type='checkbox')
+          |  I agree to the terms of services
+        button.signup-btn(type='button') Sign up
+        hr
+        p.or OR
+        button.twitter-btn(type='button') Login with twitter
+        p
+          | Do you have an account?
+          a(href='#') Sign in

@@ -1,9 +1,12 @@
 doctype html
-html
+html(lang='en', dir='ltr')
   head
-    title= login
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='utf-8')
+    title Login Form
+    link(rel='stylesheet', href='style.css')
   body
-    p Lorem ipsum dolor sit amet, consectetur adipisicing elit
-    block content
-<!DOCTYPE html>
+    form.box(action='index.html', method='post')
+      h1 Login
+      input(type='text', name='', placeholder='Username')
+      input(type='password', name='', placeholder='Password')
+      input(type='submit', name='', value='Login')
