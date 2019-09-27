@@ -9,7 +9,7 @@ var expressValidator = require('express-validator');
 var LocalStrategy = require('passport-local').Strategy;
 var session = require('express-session');
 //var multer = require('multer');
-var mongo = require('mongodb');
+//var mongo = require('mongodb');
 var mongoose = require('mongoose');
 
 

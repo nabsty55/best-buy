@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var Product = require('../models/items');
+var csrf = require('csurf');
+
+var csrfProtection = csrf();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -15,5 +18,12 @@ router.get('/', function(req, res, next) {
   });
 
 });
+
+/* Get signup page*/
+router.get('/signup', function(req, res, next){
+  res.render('signup');
+});
+
+
 
 module.exports = router;
