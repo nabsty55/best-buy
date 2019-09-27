@@ -2,12 +2,13 @@
 <html>
 <head>
 	<title>Delivery Page</title>
+	<link rel="stylesheet" href= "google.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script type = "dev.js"></script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div = "container">
+	<div class = "container">
 		<h1>Please fill in your Delivery Details Here.</h1>
  		<br>
 		<br>
@@ -63,7 +64,7 @@
       <input type="text" class="form-control" id="inputCity">
       <small id="note" class="form-text text-muted">Only available to clients within Kampala district</small>
 
-      <button id= 'getStarted' type="button" class="button button-block"/>Proceed</button> 
+      <button id= 'getStarted' type="button" class="btn btn-danger"/>Proceed</button> 
     </div>
     </div>
     </div>
@@ -76,30 +77,8 @@
 	</form>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- /form -->
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#config-web-app -->
-     <!-- Add Firebase products that you want to use -->
-  <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-firestore.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyCifkrNS7nfYXebMGTSn0yFy9nf7CYv3-k",
-    authDomain: "stack-overflow-ja-edu.firebaseapp.com",
-    databaseURL: "https://stack-overflow-ja-edu.firebaseio.com",
-    projectId: "stack-overflow-ja-edu",
-    storageBucket: "",
-    messagingSenderId: "55782769953",
-    appId: "1:55782769953:web:7eb3d9b88039b70f78ea60"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-<script src="scripts.js"></script>
+	
+<script src="dev.js"></script>
 </body>
 </html>
 
