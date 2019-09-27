@@ -1,11 +1,15 @@
 $('document').ready(()=>{
 	console.log('start');
+
 $('#getStarted').click(()=>{
-	console.log("begin");
+	console.log("Begin");
+
 var firstname = $("#fname").val()
-	console.log(name);
+	console.log(firstname);
+
 var lastname = $("#lname").val()
-	console.log(surname);
+	console.log(lastname);
+
   var number = $('#number').val()
   console.log(number);
 
@@ -13,14 +17,14 @@ var email = $('#emailadd').val()
 	console.log(email);
 
   var address1 = $('#inputAddress').val()
-  console.log(Address1);
+  console.log(address1);
 
   var address2 = $('#inputAddress2').val()
-  console.log(Address2);
+  console.log(address2);
 
   var area = $('#inputCity').val()
   console.log(area);
 
-
+});
 });
 	
