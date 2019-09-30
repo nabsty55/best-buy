@@ -5,18 +5,21 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
 var passport = require('passport');
+var flash = require('connect-flash');
 var expressValidator = require('express-validator');
 var LocalStrategy = require('passport-local').Strategy;
-var session = require('express-session');
-//var multer = require('multer');
-//var mongo = require('mongodb');
 var mongoose = require('mongoose');
 
 
 var indexRouter = require('./routes/index');
 var app = express();
 
-mongoose.connect('mongodb://localhost:27017/stock');
+mongoose.connect('mongodb://localhost:27017/stock', {useNewUrlParser: true }, {useUnifiedTopology: true });
+require('./config/passport');
+
+//setup express session middleware
+app.use(session({secret: 'thisismysecret', resave: false, saveUninitialized: false}));
+app.use(flash());
 
 //Passport
 app.use(passport.initialize());
@@ -56,12 +59,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//Handle sessions
-app.use(session({
-	secret:'thesecret',
-	saveUninitialized:false,
-	resave:false
-}));
+
 
 app.use('/', indexRouter);
 
