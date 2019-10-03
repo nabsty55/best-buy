@@ -9,17 +9,11 @@ router.use(csrfProtection);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  Product.find(function(err, docs){
-    var itemChunk = [];
-    var chunkSize = 3;
-    for(var i = 0; i<docs.length; i += chunkSize){
-      itemChunk.push(docs.slice(i, i + chunkSize));
-    }
 
-    res.render('index', { title: 'BestBuy', products: itemChunk });
+
+    res.render('index', { title: 'BestBuy'});
   });
 
-});
 
 /* Get signup page*/
 router.get('/signup', function(req, res, next){
