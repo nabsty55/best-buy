@@ -1,2 +1,3 @@
 # best-buy
-##Heroku link[Title](https://bestbuy-outboxedu.herokuapp.com/)
+## Heroku link to the website: [Title](https://bestbuy-outboxedu.herokuapp.com/)
+
