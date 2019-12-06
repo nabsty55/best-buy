@@ -1,7 +1,7 @@
 # BestBuy shopping app.
 ## Heroku link to the website: [BestBuy](https://bestbuy-outboxedu.herokuapp.com/)
 
-This project was worked on By Nabende Antony, Jaelle Amongi,Kafeero David, Roland Bissasso.
+This project was worked on By Nabende Antony, Jaelle Amongi,Kafeero David, Roland Bisasso.
 The project took a week and these are some of the technologies we used:
 >
 **FrontEnd**
