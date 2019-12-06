@@ -3,6 +3,7 @@
 
 This project was worked on By Nabende Antony, Jaelle Amongi and Kafeero David.
 The project took a week and these are some of the technologies we used:
+>
 **FrontEnd**
  -HTML/CSS
  
