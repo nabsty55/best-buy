@@ -9,6 +9,10 @@ The project took a week and these are some of the technologies we used:
  
 **BackEnd**
   -Express/NodeJS
+  
+  ---
+  
+ A link to the design Document can be found at : [Design Document](https://docs.google.com/document/d/1acyC4W7kW2cNdZa6hAsyGnqRSI-vCdcP-0t-5Jq5w_s/edit?usp=sharing)
 
 ---
 The purpose of this project is to create a functional website for people to be able
